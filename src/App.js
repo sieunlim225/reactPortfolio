@@ -24,7 +24,7 @@ export default class App extends Component {
     })
   }
   _callApi = () =>{
-    return fetch('https://localhost:8080/forums')
+    return fetch('https://sieunlim225.cafe24.com/forums')
     .then(res => res.json())
     
     .then( json => json.content )
