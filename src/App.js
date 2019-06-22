@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import {Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
-import Forums from './Forums/Forums';
+
 
 export default class App extends Component {
   constructor(props){
@@ -9,48 +11,33 @@ export default class App extends Component {
     this.state={}
   }
   
-  componentDidMount(){
-    //많은 함수를 불러오는 곳인 만큼 리펙토링하여 필요한 함수만 넣는다.
-    this._getProjects();
-  }
-
-  _getProjects = async () => {
-  //async 이전 라인의 작업이 끝날때까지 기다리지 않는다
-    const forums = await this._callApi();
-    //뒤에있는 함수가 성공에상관없이 끝나면 
-    this.setState({
-      forums
-      //forums: forums
-    })
-  }
-  _callApi = () =>{
-    return fetch('https://sieunlim225.cafe24.com/forums')
-    .then(res => res.json())
-    
-    .then( json => json.content )
-  
-      //.then(() => .then()) 콜백지옥을 피하자
-
-    .catch(err => console.log(err))
-  }
-  renderForums = () => {
-    const forums = this.state.forums.map((forum, index) => {
-      
-      return <Forums forumId={forum.forumId} forumSubject={forum.forumSubject} forumContent={forum.forumContent} userId={forum.userId} forumHit={forum.forumHit} key={index}/>
-      //return <Forums props={forum} key={index}/>
-    })
-    return forums
-  }
   render(){
     return (
-      <div className="App">
-        {this.state.forums ? this.renderForums() : 'Loading...'}
-      </div>
+      // <Container className="container">
+      //   <Row>
+      //     <Col>
+      <Container>
+        <Row>
+          <Col className="text-center">
+            <div className="me"/>
+            <div className="display-2">Sieun, Lim</div>
+            <div className="blockquote">Talk is cheap, Show me the code</div>
+            <br/>
+            <div className="menu">
+              <button className="btn btn-dark btn-lg btn-block">Resume</button>
+              <button className="btn btn-light btn-lg btn-block">Projects</button>
+              <button className="btn btn-dark btn-lg btn-block">Blog</button>
+              <button className="btn btn-light btn-lg btn-block">Contact</button>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+        
+      //     </Col>
+      //   </Row>
+      // </Container>
     )
   }
-
-  
-
 }
 
 
