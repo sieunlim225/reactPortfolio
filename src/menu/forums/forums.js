@@ -1,7 +1,8 @@
 import React from 'react';
 import { Table } from 'reactstrap';
 import PropTypes from 'prop-types';
-import './Forums.css';
+import './forums.css';
+
 
  export default class Forums extends React.Component{
     //생성자 - 초기화
