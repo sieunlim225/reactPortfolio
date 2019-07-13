@@ -3,7 +3,13 @@ body, html, #root, .app{
     height: 100%;
 }
 ::-webkit-scrollbar {
-
     display:none;
-    
-    }
+}
+
+.divider-grey{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height:1px;
+    border: 0.7px solid #ebebeb;
+}
