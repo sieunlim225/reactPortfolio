@@ -15,7 +15,8 @@ export default class App extends Component {
     return (
       //exact 는 / 포함된 URI 모든 곳에서 호출이됨
       <div className="app">
-        <Route path="/" component={Header}/>
+        
+        {/* <Route path="/" component={Header}/> */}
         <Route exact path="/" component={Main}/>
         <Route exact path="/" component={Resume}/>
         
