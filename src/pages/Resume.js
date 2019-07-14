@@ -10,7 +10,7 @@ export default class Resume extends Component {
       return (
           <div className="resume">
             <div className="resume-content">
-              <div className="display-4 text-center">WHAT I AM CAPABLE OF.</div>
+              <div className="display-4 text-center">WORDS THAT DESCRIBES ME</div>
             <div class="row">
       <div class="col-lg-2">
         <div class="logo"></div>

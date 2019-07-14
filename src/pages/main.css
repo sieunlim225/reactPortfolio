@@ -15,8 +15,50 @@
     align-items: center;
    
   } */
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
   
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
   .main{
+    /* background-color: #1F2124; */
+    /* background: linear-gradient(-40deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+    background: linear-gradient(-40deg,black,#1F2124, black, #272625);
+    /* background: linear-gradient(-40deg, #5CAB7D,#5A9367 , #5CAB7D, #5A9367); */
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
     /* width: 100%;
 
     margin-top: 100px;
@@ -34,27 +76,52 @@
     align-items: center;
     color:#000000ad; */
   }
-  
+  .color-a{color: #67D5B5 !important; }
+  .color-b{color: #EE7785 !important;}
+  .color-c{color: #C89EC4 !important;}
+  .color-d{color: #84B1ED !important;}
+  .color-e{color: #FDD692 !important;}
+
   .main-content{
     width:70%;
     margin:0 auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    color:#000000ad;
+    color: #FFFFF2 !important;
   }
 
   .main-phrase{
     padding-top:125px;
   }
+  .main-phrase div a:hover{
+    color: #FFFFF2 !important;
+    cursor: pointer;
+  }
   .main-menu{
     padding-top:130px;
     text-align: right;
+    letter-spacing: 15px;
   }
+  .main-menu div a{
+    color: #FFFFF2 !important;
+  }
+  .main-menu a:hover{
+    color:#000000ad !important;
+    text-shadow: 4px 4px 0px #1565C0
+  }
+  .menu-contact{
+    text-align: left;
+    letter-spacing: 8px;
+  }
+
+  
+
   .name{
     font-weight: 400;
   }
   .sub-name{
     font-size: 4.4rem;
+    padding-bottom:10px;
   }
   .me{
     width: 150px;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
+import About from './pages/About';
 import Resume from './pages/Resume';
+
 import Header from './navigations/Header';
 import Main from './pages/Main';
 
@@ -17,8 +19,10 @@ export default class App extends Component {
       <div className="app">
         
         {/* <Route path="/" component={Header}/> */}
+      
         <Route exact path="/" component={Main}/>
-        <Route exact path="/" component={Resume}/>
+        <Route exact path="/" component={About}/>
+        {/* <Route exact path="/" component={Resume}/> */}
         
       </div>
     )
