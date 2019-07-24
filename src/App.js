@@ -5,6 +5,7 @@ import Resume from './pages/Resume';
 
 import Header from './navigations/Header';
 import Main from './pages/Main';
+import Works from './pages/Works';
 
 
 export default class App extends Component {
@@ -22,6 +23,7 @@ export default class App extends Component {
       
         <Route exact path="/" component={Main}/>
         <Route exact path="/" component={About}/>
+        <Route exact path="/" component={Works}/>
         {/* <Route exact path="/" component={Resume}/> */}
         
       </div>

@@ -1,0 +1,21 @@
+.works-content{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.works-header{
+    font-size: 3.5rem;
+    text-align: center;
+    border-bottom: 10px solid #1F2124;
+    padding-bottom: 15px;
+}
+.works.sub-header{
+    display: flex;
+    justify-content: center;
+}
+
+.works-sub-header div{
+    font-size:3vw;
+    width: 100px;
+    height:50px;
+}
