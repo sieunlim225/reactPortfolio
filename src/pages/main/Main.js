@@ -27,7 +27,7 @@ export default class Main extends Component {
               <div className="display-4 main-menu">
                   <div><a href="#about">ABOUT</a></div>
                   <div><a href="#works">WORKS </a></div>
-                  <div><a href="/lab">LABS</a></div>
+                  <div><a href="/labs">LABS</a></div>
                   <div className="menu-contact"><a href="#">CONTACT<nbps/></a></div>
               </div>
             </div>

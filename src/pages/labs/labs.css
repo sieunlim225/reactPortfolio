@@ -1,0 +1,61 @@
+.labs{
+    width: 60vw; 
+    margin: 0 auto;
+    padding: 4%;
+    background-color: white;
+    box-shadow: 0px 0px 15px #cdcdcd;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 15px #cdcdcd;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 15px #cdcdcd;
+}
+.sticky ul li{
+    margin: 5px;
+}
+.sticky ul li:hover{
+    cursor: pointer;
+    border-left: 3px solid black;
+    box-shadow: 0px 0px 15px #cdcdcd;
+
+}
+.sidebar-item {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+  .content-section {
+    padding:30px;
+    background-color: white;
+    box-shadow: 0px 0px 15px #cdcdcd;
+    min-height: 700px;
+  }
+  
+  .sidebar-item {
+    text-align: center;
+    
+  }
+
+  .content-header{
+      padding-bottom:15px;
+      border-bottom: 0.7px solid #ebebeb;
+  }
+  .post-date{
+      padding: 5px;
+      color:#999 !important;
+  }
+  

@@ -1,0 +1,27 @@
+.labs-header{
+    position: fixed;
+    left: 9vw;
+    width: 10vw;
+    background-color: white;
+    box-shadow: 0px 0px 15px #cdcdcd;
+
+}
+
+.labs-logo{
+    width: 100px;
+    margin: 0 auto;
+}
+.labs-logo:hover{
+    cursor: pointer;
+}
+.labs-menu ul li {
+    list-style: none;
+    margin: 0 10px 0px 10px;
+}
+.labs-menu ul li a{
+    
+}
+.labs-menu ul li a:hover{
+    cursor: pointer;
+    border-bottom: 3px solid black;
+}

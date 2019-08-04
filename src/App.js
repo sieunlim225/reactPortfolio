@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import About from './pages/About';
-import Resume from './pages/Resume';
-
-import Header from './navigations/Header';
-import Main from './pages/Main';
-import Works from './pages/Works';
-
+import { Route, Switch } from 'react-router-dom';
+import About from './pages/main/About';
+import Main from './pages/main/Main';
+import Works from './pages/main/Works';
+import Labs from './pages/labs/Labs';
 
 export default class App extends Component {
   constructor(props){
@@ -16,16 +13,26 @@ export default class App extends Component {
   
   render(){
     return (
-      //exact 는 / 포함된 URI 모든 곳에서 호출이됨
+      //exact : path에 포함된 URI 모든 곳에서 호출이됨
       <div className="app">
-        
-        {/* <Route path="/" component={Header}/> */}
-      
-        <Route exact path="/" component={Main}/>
-        <Route exact path="/" component={About}/>
-        <Route exact path="/" component={Works}/>
-        {/* <Route exact path="/" component={Resume}/> */}
-        
+      <Route>
+        <Switch>
+          <Route exact path="/">
+            <div className="app-main">
+              <Route component={Main}/>
+              <Route component={About}/>
+              <Route component={Works}/>
+            </div>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route exact path="/labs">
+            <div className="app-labs">
+              <Route component={Labs}/>
+            </div>
+          </Route>
+        </Switch>
+      </Route>
       </div>
     )
   }

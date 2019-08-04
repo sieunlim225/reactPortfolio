@@ -1,4 +1,4 @@
- .about-cover{
+ /* .about-cover{
     background-image: url('../resources/cat.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     opacity: 0.5;
 
     
-}/*
+}
 .about-cover2{
     background-image: url('../resources/simple.jpg');
     background-position: center;
@@ -22,7 +22,7 @@
     position:absolute;
     z-index:-1;
     opacity: 0.9;
-} */
+}
 
 .about-cover3{
     background-image: url('../resources/intuitive.jpg');
@@ -35,7 +35,7 @@
     position:absolute;
     z-index:-1;
     opacity: 0.9;
-}
+} 
 
 .about-cover4{
     background-image: url('../resources/flexible.jpg');
@@ -48,7 +48,7 @@
     position:absolute;
     z-index:-1;
     opacity: 0.8;
-}
+}*/
 .about-body{
     width: 70%;
     margin:0 auto;

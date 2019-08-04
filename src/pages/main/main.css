@@ -145,7 +145,7 @@
   .sub-name{
     font-size: 4.7rem;
   }
-  .me{
+  /* .me{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -155,7 +155,7 @@
     background-position: center;
     background-repeat: no-repeat;
     border: 0.1px solid #929292;
-  }
+  } */
   
   .menu{
     font-size: 25pt;
